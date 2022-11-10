@@ -9,7 +9,7 @@ import org.junit.*;
 public class TestListExamples {
   public void testFilter() {
     List<String> list = Arrays.asList();
-    List<String> exp = Arrays.asList()
+    List<String> exp = Arrays.asList();
     StringChecker sc = new StringChecker() {
       public boolean checkString(String s) {
         if (s.contains("Test")) {
