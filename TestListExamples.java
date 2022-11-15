@@ -7,8 +7,9 @@ import java.util.List;
 import org.junit.*;
 
 public class TestListExamples {
+  @Test
   public void testFilter() {
-    List<String> list = Arrays.asList();
+    List<String> list = new ArrayList<>();
     List<String> exp = Arrays.asList();
     StringChecker sc = new StringChecker() {
       public boolean checkString(String s) {
