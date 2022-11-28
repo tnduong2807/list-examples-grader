@@ -12,7 +12,7 @@ cp TestListExamples.java student-submission
 
 cd student-submission
 
-if [[ -f student-submission/ListExamples.java]];
+if [[ -f ListExamples.java]];
 then
     echo "Found ListExamples.java!"
 else 
@@ -24,14 +24,10 @@ fi
 
 set +e
 
-cp ../TestListExamples.java ./
+javac -cp .:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar *.java
 
-javac ListExamples.java
-javac TestListExamples.java
 if [[ $? -eq 0 ]];
 then 
-    javac -cp .:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar *.java
-    java -cp .:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
     echo "Files complile successful!"
 else
     echo "Files can't compile!!!"
@@ -43,7 +39,8 @@ java -cp .:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar org.junit.runner
 if [[ $? -eq 0]];
 then
     echo "Tests Passed!"
-    echo "Grade: 2/2"
+    echo "Grade:"
+    cat grades.txt
     exit
 else
     echo "Tests not Passed!"
@@ -52,4 +49,7 @@ else
 fi
 ```
 
+## First screenshoot of submission:
+
+![]()
 
