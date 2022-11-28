@@ -47,15 +47,14 @@ fi
 ```
 
 
-![First screenshoot of submission](https://github.com/tnduong2807/list-examples-grader/blob/main/Screenshot%20(77).png?raw=true)
+!["First screenshoot of submission"](https://github.com/tnduong2807/list-examples-grader/blob/main/Screenshot%20(77).png?raw=true)
+
+
+!["Second screenshoot of submission"](https://github.com/tnduong2807/list-examples-grader/blob/main/Screenshot%20(79).png?raw=true)
 
 
 
-![Second screenshoot of submission](https://github.com/tnduong2807/list-examples-grader/blob/main/Screenshot%20(78).png?raw=true)
-
-
-
-![Third screenshoot of submission](https://github.com/tnduong2807/list-examples-grader/blob/main/Screenshot%20(79).png?raw=true)
+!["Third screenshoot of submission"](https://github.com/tnduong2807/list-examples-grader/blob/main/Screenshot%20(80).png?raw=true)
 
 
 
