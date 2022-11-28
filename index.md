@@ -46,15 +46,17 @@ else
 fi
 ```
 
+**First screenshoot of submission:**
 
-!["First screenshoot of submission"](https://github.com/tnduong2807/list-examples-grader/blob/main/Screenshot%20(77).png?raw=true)
+![](https://github.com/tnduong2807/list-examples-grader/blob/main/Screenshot%20(77).png?raw=true)
 
+**Second screenshoot of submission:**
 
-!["Second screenshoot of submission"](https://github.com/tnduong2807/list-examples-grader/blob/main/Screenshot%20(79).png?raw=true)
+![](https://github.com/tnduong2807/list-examples-grader/blob/main/Screenshot%20(79).png?raw=true)
 
+**Third screenshoot of submission:**
 
-
-!["Third screenshoot of submission"](https://github.com/tnduong2807/list-examples-grader/blob/main/Screenshot%20(80).png?raw=true)
+![](https://github.com/tnduong2807/list-examples-grader/blob/main/Screenshot%20(80).png?raw=true)
 
 
 
