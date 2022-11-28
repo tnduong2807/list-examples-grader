@@ -7,25 +7,36 @@ import java.util.List;
 import org.junit.*;
 
 public class TestListExamples {
-  @Test
-  public void testFilter() {
-    List<String> list = new ArrayList<>();
-    List<String> exp = Arrays.asList();
-    StringChecker sc = new StringChecker() {
-      public boolean checkString(String s) {
-        if (s.contains("Test")) {
-          return true;
-        }
-        return false;
-      }
-    };
-    for (int i = 0; i < list.size(); i++) {
-      list.add("Test" + i);
+  @Test(timeout = 100)
+    public void testFilter() {
+        StringChecker sc = s1 -> s1.contains("Hello");
+        List<String> input = new ArrayList<>();
+        List<String> expected = new ArrayList<>();
+        input.add("Hi Trong");
+        input.add("Hello World!");
+        input.add("everyone hi!");
+        expected.add("Hi Trong");
+        expected.add("everyone hi!");
+
+        assertArrayEquals(expected.toArray(), ListExamples.filter(input, sc).toArray());
     }
-    list.add(3, "banana");
-    exp.add("banana");
-    ListExamples.filter(list, sc);
-    System.out.println(list);
-  }
+
+
+  @Test(timeout = 100)
+    public void testMerge() {
+        List<String> input1 = new ArrayList<>();
+        List<String> input2 = new ArrayList<>();
+        List<String> expected = new ArrayList<>();
+        input1.add("1");
+        input1.add("3");
+        input2.add("2");
+        input2.add("4");
+        expected.add("1");
+        expected.add("2");
+        expected.add("3");
+        expected.add("4");
+
+        assertArrayEquals(expected.toArray(), ListExamples.merge(input1, input2).toArray());
+    }
 
 }
