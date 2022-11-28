@@ -5,9 +5,8 @@ set -e
 rm -rf student-submission
 git clone $1 student-submission
 
-cp TestListExamples.java student-submission
-
 cd student-submission
+cp ../TestListExamples.java
 
 if [[ -f ListExamples.java]];
 then
@@ -18,8 +17,6 @@ else
     echo "Please resubmit!"
     exit 1
 fi
-
-set +e
 
 javac -cp .:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar *.java
 
